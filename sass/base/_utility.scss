@@ -1,0 +1,46 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 1fr;
+  font-size: 3rem;
+  .logo {
+    background-image: url(../../img/UNLEASHED-WHITE.png);
+    height: 10rem;
+    width: 10rem;
+    background-size: cover;
+    justify-self: start;
+  }
+
+  .navigation-menu-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    li {
+      list-style: none;
+      transition: all 0.2s;
+      &:hover {
+        transform: translateY(-0.2rem);
+      }
+      &:last-child {
+        margin-right: 2rem;
+      }
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 10rem;
+}
